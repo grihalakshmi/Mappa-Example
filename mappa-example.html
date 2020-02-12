@@ -16,14 +16,14 @@ const mappa = new Mappa('Leaflet');
 
 // Lets change the map tiles to something with more contrast
 const options = {
-  lat: 0,
-  lng: 0,
+  lat: 49.266423,
+  lng: -123.249510,
   zoom: 4,
   style: "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png"
 }
 
 function setup(){
-  canvas = createCanvas(640,640);
+  canvas = createCanvas(1500,640);
   myMap = mappa.tileMap(options); 
   myMap.overlay(canvas) 
 
